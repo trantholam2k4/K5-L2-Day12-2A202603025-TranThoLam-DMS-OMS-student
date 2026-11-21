@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S07_ir,IR_sim,"Đèn chiếu sáng hồng ngoại làm rõ thùng carton ở ghế sau bên phải mà trên ảnh S07_rgb ban đêm bị tối đen rất khó thấy",object (type),Gán đầy đủ box object với type=box trên S07_ir; trên S07_rgb chỉ gán khi tăng sáng thấy rõ hình khối
+S07_ir,IR_sim,"Ảnh đơn sắc không màu và vùng ngực người ngồi giữa tối nên không phân biệt được dây an toàn với nền áo",seatbelt,"Giữ unknown trên cả S07_ir và S07_rgb, không suy đoán"
+S01_ir,IR_sim,"Mất hoàn toàn thông tin màu sắc (ảnh mức xám) và ánh sáng môi trường của cảnh mô phỏng",light,"Bắt buộc đặt light=unknown theo quy định cho toàn bộ ảnh SVIRO"
+D01,real_IR,"Ánh sáng hồng ngoại tạo vùng tối sâu ở phía dưới khung hình làm ranh giới bàn tay trái gần vô lăng kém rõ nét",hand (on_wheel),"Chỉ vẽ box hand từ cổ tay đến ngón tay ở phần thấy rõ, đặt on_wheel=no hoặc unknown khi không chắc điểm chạm"
+D01,real_IR,"Góc chụp nghiêng kết hợp đặc trưng ảnh hồng ngoại khiến mắt phải bị sống mũi/góc khuất che mất khe mắt",eye_right,"Đặt eye_right=unknown và bật cờ occluded cho các điểm mốc mắt phải trên face13 thay vì đoán open/closed"
+D04,real_IR,"Vùng hốc mắt tối sâu trên ảnh hồng ngoại thật khiến không quan sát được trạng thái mở hay nhắm của cả hai mắt",eye_left / eye_right,"Đặt eye_left=unknown và eye_right=unknown, đồng thời bật cờ occluded/outside cho các điểm mắt trên face13"

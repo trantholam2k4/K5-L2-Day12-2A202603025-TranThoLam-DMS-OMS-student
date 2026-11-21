@@ -1,0 +1,7 @@
+image,label,field,detail,mine,theirs,verdict,guideline_rule,action
+D01.png,face13,count,khác số skeleton,1,0,giữ bản gốc (mine),Mục 4.6 (Mặt rộng >= 60px phải gán đủ 13 điểm face13),Giữ nguyên skeleton face13 từ bản export_final.zip
+D02.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,giữ bản gốc (mine),Mục 4.7 (Gán đủ tất cả bàn tay thấy được của tài xế),Giữ nguyên box hand bị thiếu ở bản đối chiếu
+D02.png,face13,count,khác số skeleton,1,0,giữ bản gốc (mine),Mục 4.6 (face13 bắt buộc trên ảnh D## có mặt >= 60px),Giữ nguyên skeleton face13 từ bản export_final.zip
+D03.png,person,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,giữ bản gốc (mine),Mục 4.2 (Mỗi ảnh DMS phải có box person cho tài xế),Giữ nguyên box person từ bản gốc
+D03.png,face,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,giữ bản gốc (mine),Mục 4.5 (Thấy rõ khuôn mặt tài xế thì phải vẽ box face),Giữ nguyên box face từ bản gốc
+D03.png,face13,count,khác số skeleton,1,0,giữ bản gốc (mine),Mục 4.6 (Bổ sung đủ 13 điểm mốc trên box face hợp lệ),Giữ nguyên skeleton face13 từ bản export_final.zip
